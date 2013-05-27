@@ -101,3 +101,10 @@ static Key keys[] = {
     { MODKEY|GDK_SHIFT_MASK,GDK_b,      togglescrollbars,{ 0 } },
     { MODKEY|GDK_SHIFT_MASK,GDK_g,      togglegeolocation, { 0 } },
 };
+
+static SearchEngine searchengines[] = {
+  { "g:",        "http://www.google.com/search?q=%s"   },
+  { "en:",       "http://dict.cc/?s=%s" },
+  { "ug:",       "http://%s.uni-goettingen.de" },
+  { "dict:",     "http://www.thefreedictionary.com/%s" },
+};
